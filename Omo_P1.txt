@@ -3,3 +3,32 @@
 
 ## Markdown Homework
 
+W1 Practical
+1. Navigate to your home directory
+a. cd ~
+2. Navigate to the directory that contains work for another class using a relative
+pathway
+a. cd ~/IntroBiolComp-2026/Python
+3. Navigate to the Data Files directory within Python
+a. First get into python:
+i. cd Users
+ii. cd IntroBiolComp-2026
+iii. cd Python
+b. Now in Python
+i. cd DataFiles
+4. Navigate to sandbox within Unix
+a. Go back to IntroBiolComp-2026 file
+i. cd ../..
+b. Now go to unix
+i. cd Unix
+5. Navigate to DataFiles directory in IntroBiolComp-2026/Python
+a. cd DataFiles
+6. How many lines are in the file BeeSpecies.txt
+a. wc -l BeeSpecies.txt
+b. 19509 lines
+7. Without leaving the current directory count the number of words in the
+CodonTable.tsv file in the IntroBiolComp-2026/Unix/DataFiles directory
+a. wc -l CodonTable.tsv
+8. What is the last codon reported in this file
+a. Tail -n 1 CodonTable.tsv
+b. TT Phe F
