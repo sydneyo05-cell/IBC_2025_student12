@@ -18,4 +18,7 @@ pathway
   * 19509 lines
 7. Without leaving the current directory count the number of words in the
 CodonTable.tsv file in the IntroBiolComp-2026/Unix/DataFiles directory
-  *wc -l CodonTable.tsv
+  * wc -l CodonTable.tsv
+8. What is the last codon reported in this file
+* Tail -n 1 CodonTable.tsv
+* TT Phe F
