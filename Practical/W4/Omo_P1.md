@@ -9,5 +9,5 @@ pathway
      * cd Users
      * cd IntroBiolComp-2026
      * cd Python
-    * Now in python
+   * Now in python
       * cd DataFiles
