@@ -7,3 +7,7 @@ pathway
 4.  Navigate to the Data Files directory within Python
    * First get into python:
      * cd Users
+     * cd IntroBiolComp-2026
+     * cd Python
+    * Now in python
+      * cd DataFiles
