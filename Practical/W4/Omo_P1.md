@@ -12,4 +12,4 @@ pathway
    * Now in python
       * cd DataFiles
 5. Navigate to DataFiles directory in IntroBiolComp-2026/Python
-  cd DataFiles
+* cd DataFiles
