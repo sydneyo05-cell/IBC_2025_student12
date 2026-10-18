@@ -15,6 +15,19 @@ did git pull to get new files
 
 ### D. Write a script that returns a delimited table (e.g. comma-separated or tab-separated) with the number of times each individual was sampled, and saves it as Num_samples.csv. The beginning of your file should look similar to this:
 
+## 2. Mining The Origin of Species
+### A. Use the curl command to download a text version of The Origin from https://www.gutenberg.org/cache/epub/1228/pg1228.txt. Use the -o flag to name your file (otherwise the whole file will be dumped to the screen).
+
+### B. The current view on the origin of new species is that reproductive isolation plays a key role. How many times are the words "sterility" and "isolation" mentioned in the book? Hint: don't forget to make your search case-insensitive.
+
+
+### C. To get a better idea of the context in which Darwin mentioned these words, search for the 3 lines before and after each occurrence of the key words in point B, and save your results to a text file. Save one file for each key word.
+
+
+### D. A good way to explore broad patterns of word usage is a diagram called a word cloud (also known as a tag cloud).
+
+
+
 
 ## 3. Twelve days of Christmas
 ```python
