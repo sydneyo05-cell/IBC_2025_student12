@@ -5,7 +5,7 @@
 ### A
 did git pull to get new files
 ### B. How many times were individuals 8 and 22 sampled?
-
+ 
 
 
 
