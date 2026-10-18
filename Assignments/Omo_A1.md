@@ -18,11 +18,11 @@ did git pull to get new files
 
 ## 3. Twelve days of Christmas
 ```python
-days = [
-    "First", "Second", "Third", "Fourth",
+# all the days from the file
+days = [  "First", "Second", "Third", "Fourth",
     "Fifth", "Sixth", "Seventh", "Eighth",
-    "Ninth", "Tenth", "Eleventh", "Twelfth"
-]
+    "Ninth", "Tenth", "Eleventh", "Twelfth"]
+# all the gifts from the file 
 gifts = [
     "A Partridge in a Pear Tree",
     "Two Turtle Doves, and",
@@ -39,16 +39,120 @@ gifts = [
 ]
 
 
-# Outer Loop 
+# Outer Loop
+# this is for the i in the range of the 12 days it will print the day and the song lyrics
 for i in range(12):
     print("On the", days[i], "day of Christmas my true love gave to me:")
-    # Inner Loop 
+    # Inner Loop - this loops back from the current day (i) to the past days to include a list of all the gifts
+
     for j in range(i, -1, -1):
-        if j == 1:
-            print(gifts[j] + ", and")
-        else:
-            print(gifts[j])
+        print(gifts[j])
 
-    print()
+    print ()
 
+```
+output 
+```python
+
+On the First day of Christmas my true love gave to me:
+A Partridge in a Pear Tree
+
+On the Second day of Christmas my true love gave to me:
+Two Turtle Doves, and
+A Partridge in a Pear Tree
+
+On the Third day of Christmas my true love gave to me:
+Three French Hens
+Two Turtle Doves, and
+A Partridge in a Pear Tree
+
+On the Fourth day of Christmas my true love gave to me:
+Four Colly Birds
+Three French Hens
+Two Turtle Doves, and
+A Partridge in a Pear Tree
+
+On the Fifth day of Christmas my true love gave to me:
+Five Gold Rings
+Four Colly Birds
+Three French Hens
+Two Turtle Doves, and
+A Partridge in a Pear Tree
+
+On the Sixth day of Christmas my true love gave to me:
+Six Geese-a-Laying
+Five Gold Rings
+Four Colly Birds
+Three French Hens
+Two Turtle Doves, and
+A Partridge in a Pear Tree
+
+On the Seventh day of Christmas my true love gave to me:
+Seven Swans-a-Swimming
+Six Geese-a-Laying
+Five Gold Rings
+Four Colly Birds
+Three French Hens
+Two Turtle Doves, and
+A Partridge in a Pear Tree
+
+On the Eighth day of Christmas my true love gave to me:
+Eight Maids-a-Milking
+Seven Swans-a-Swimming
+Six Geese-a-Laying
+Five Gold Rings
+Four Colly Birds
+Three French Hens
+Two Turtle Doves, and
+A Partridge in a Pear Tree
+
+On the Ninth day of Christmas my true love gave to me:
+Nine Ldaies Dancing
+Eight Maids-a-Milking
+Seven Swans-a-Swimming
+Six Geese-a-Laying
+Five Gold Rings
+Four Colly Birds
+Three French Hens
+Two Turtle Doves, and
+A Partridge in a Pear Tree
+
+On the Tenth day of Christmas my true love gave to me:
+Ten Lords-a-Leaping
+Nine Ldaies Dancing
+Eight Maids-a-Milking
+Seven Swans-a-Swimming
+Six Geese-a-Laying
+Five Gold Rings
+Four Colly Birds
+Three French Hens
+Two Turtle Doves, and
+A Partridge in a Pear Tree
+
+On the Eleventh day of Christmas my true love gave to me:
+Eleven Pipers Piping
+Ten Lords-a-Leaping
+Nine Ldaies Dancing
+Eight Maids-a-Milking
+Seven Swans-a-Swimming
+Six Geese-a-Laying
+Five Gold Rings
+Four Colly Birds
+Three French Hens
+Two Turtle Doves, and
+A Partridge in a Pear Tree
+
+On the Twelfth day of Christmas my true love gave to me:
+Twelve Drummers Drumming
+Eleven Pipers Piping
+Ten Lords-a-Leaping
+Nine Ldaies Dancing
+Eight Maids-a-Milking
+Seven Swans-a-Swimming
+Six Geese-a-Laying
+Five Gold Rings
+Four Colly Birds
+Three French Hens
+Two Turtle Doves, and
+A Partridge in a Pear Tree
 ```
