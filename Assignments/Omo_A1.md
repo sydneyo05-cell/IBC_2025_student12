@@ -51,7 +51,7 @@ for i in range(12):
     print ()
 
 ```
-output 
+Output 
 ```python
 
 On the First day of Christmas my true love gave to me:
