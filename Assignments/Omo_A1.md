@@ -76,8 +76,35 @@ grep -oi "isolation" OriginOfSpecies.txt | wc -l
 
 output = 12
 ### C. To get a better idea of the context in which Darwin mentioned these words, search for the 3 lines before and after each occurrence of the key words in point B, and save your results to a text file. Save one file for each key word.
+``` bash
+grep -i -B 3 -A 3 "sterility" OriginOfSpecies.txt > Sterility_context.txt
+head Sterility_context.txt
+Output:
+CHAPTER 8. HYBRIDISM.
 
-
+  Distinction between the sterility of first crosses and of hybrids.
+  Sterility various in degree, not universal, affected by close
+  interbreeding, removed by domestication.
+  Laws governing the sterility of hybrids.
+  Sterility not a special endowment, but incidental on other
+  differences.
+  Causes of the sterility of first crosses and of hybrids.
+```
+```bash
+grep -i -B 3 -A 3 "isolation" OriginOfSpecies.txt > Isolation_context.txt
+head Isolation_context.txt
+Output:
+On the generality of intercrosses between individuals of the same
+  species.
+  Circumstances favourable and unfavourable to Natural Selection,
+  namely, intercrossing, isolation, number of individuals.
+  Slow action.
+  Extinction caused by Natural Selection.
+  Divergence of Character, related to the diversity of inhabitants of
+--
+on characters of trifling importance, its power at all ages and on both
+sexes. Sexual Selection. On the generality of intercrosses between
+```
 ### D. A good way to explore broad patterns of word usage is a diagram called a word cloud (also known as a tag cloud).
 
 
