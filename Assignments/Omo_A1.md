@@ -111,6 +111,7 @@ conda install conda-forge::wordcloud
 
 wordcloud_cli --text Sterility_context.txt --imagefile Sterility.png
 wordcloud_cli --text Isolation_context.txt --imagefile Isolation.png
+Output:
 Below is an image
 ![Sterility Word Cloud](Sterility.png)
 And here is another 
@@ -119,7 +120,7 @@ And here is another
 ```
 ### E. Based on your word clouds, do you agree with the idea that Darwin did not address the processes that lead to the formation of new species?
 
-
+I disagree with this idea because, based on the word clouds, Darwin did discuss the processes that lead to the formation of new species. The sterility word cloud includes terms related to interbreeding and hybrids, which are relevant to how new species form. The isolation word cloud includes terms related to intercrossing and species. Both word clouds suggest that Darwin did address the formation of new species in his book.
 
 ## 3. Twelve days of Christmas
 ```python
