@@ -30,8 +30,30 @@ file.close() #Closes the file after Python finishes reading it.
 ``` 
 
 ### D. Write a script that returns a delimited table (e.g. comma-separated or tab-separated) with the number of times each individual was sampled, and saves it as Num_samples.csv. The beginning of your file should look similar to this:
+I did this question on Unix 
+``` bash
+
+cd ~/IntroBiolComp-2026/Assignment1 # this makes sure im in the write directory
+echo "maleID,Num_samples" > Num_samples.csv # this creates the file we want to save the outputs to
+tail -n +2 Gesquiere2011_data.csv | cut -f 1 | sort -n | uniq -c # Code we learned in class in order to count how many times an individual appears 
+tail -n +2 Gesquiere2011_data.csv | cut -f 1 | sort -n | uniq -c | while read count maleID; do echo "$maleID,$count"; done >> Num_samples.csv
+head Num_samples.csv # displays the first 10 lines of a file
+```
+```bash
+OUTPUT: maleID,Num_samples
+1,10
+2,2
+3,61
+4,46
+5,28
+6,7
+7,5
+8,17
+9,4
+```
 
 ## 2. Mining The Origin of Species
+``` 
 
 ### A. Use the curl command to download a text version of The Origin from https://www.gutenberg.org/cache/epub/1228/pg1228.txt. Use the -o flag to name your file (otherwise the whole file will be dumped to the screen).
 ``` bash
