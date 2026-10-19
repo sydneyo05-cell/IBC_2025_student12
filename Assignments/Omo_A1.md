@@ -5,13 +5,29 @@
 ### A
 did git pull to get new files
 ### B. How many times were individuals 8 and 22 sampled?
- 
 
+Individual 8: 17
+Individual 22: 5
 
 
 ### C. Write a script that takes the file name and the individual ID and returns the number of times that individual was sampled. Paste your script in a code box with your answer (and explain what it does). Also include the script itself. You can use Unix or python for this.
+``` python
 
+import csv #Imports Python's CSV tools so you can read the data file.
 
+maleID = input("Enter male ID: ") # Asks you to enter the ID of the individual you want to count.
+count = 0 #counter starts at zero
+
+file = open("Gesquiere2011_data.csv", "r") #opens the data file 
+reader = csv.DictReader(file, delimiter="\t") # Reads the file as dictionaries, using the column headings as keys.
+
+for row in reader: # goes through line by line 
+    if row["maleID"] == maleID:  #Checks whether the individual ID in the current row matches the ID you entered.
+        count = count + 1 #adds 1 to the the ID match 
+
+print(count) # Prints the final number of samples for that individual
+file.close() #Closes the file after Python finishes reading it.
+``` 
 
 ### D. Write a script that returns a delimited table (e.g. comma-separated or tab-separated) with the number of times each individual was sampled, and saves it as Num_samples.csv. The beginning of your file should look similar to this:
 
