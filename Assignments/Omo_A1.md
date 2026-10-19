@@ -40,7 +40,8 @@ tail -n +2 Gesquiere2011_data.csv | cut -f 1 | sort -n | uniq -c | while read co
 head Num_samples.csv # displays the first 10 lines of a file
 ```
 ```bash
-OUTPUT: maleID,Num_samples
+OUTPUT:
+maleID,Num_samples
 1,10
 2,2
 3,61
