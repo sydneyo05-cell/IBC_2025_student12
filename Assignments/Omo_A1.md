@@ -53,8 +53,7 @@ maleID,Num_samples
 9,4
 ```
 
-## 2. Mining The Origin of Species
-``` 
+## 2. Mining The Origin of Species 
 
 ### A. Use the curl command to download a text version of The Origin from https://www.gutenberg.org/cache/epub/1228/pg1228.txt. Use the -o flag to name your file (otherwise the whole file will be dumped to the screen).
 ``` bash
