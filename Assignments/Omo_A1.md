@@ -106,8 +106,17 @@ on characters of trifling importance, its power at all ages and on both
 sexes. Sexual Selection. On the generality of intercrosses between
 ```
 ### D. A good way to explore broad patterns of word usage is a diagram called a word cloud (also known as a tag cloud).
+```bash
+conda install conda-forge::wordcloud
 
+wordcloud_cli --text Sterility_context.txt --imagefile Sterility.png
+wordcloud_cli --text Isolation_context.txt --imagefile Isolation.png
+Below is an image
+![Sterility Word Cloud](Sterility.png)
+And here is another 
 
+![Isolation Word Cloud](Isolation.png)
+```
 ### E. Based on your word clouds, do you agree with the idea that Darwin did not address the processes that lead to the formation of new species?
 
 
