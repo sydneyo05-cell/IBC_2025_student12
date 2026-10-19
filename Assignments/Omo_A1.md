@@ -64,7 +64,8 @@ maleID,Num_samples
 ### B. The current view on the origin of new species is that reproductive isolation plays a key role. How many times are the words "sterility" and "isolation" mentioned in the book? Hint: don't forget to make your search case-insensitive.
 ``` bash
 # the -i makes it case-insensitive and the -o prints each line individually 
-grep -oi "sterility" OriginOfSpecies.txt | wc -l.
+grep -oi "sterility" OriginOfSpecies.txt | wc -l
+
 ``` 
 
 output = 97
@@ -111,9 +112,7 @@ conda install conda-forge::wordcloud
 wordcloud_cli --text Sterility_context.txt --imagefile Sterility.png
 wordcloud_cli --text Isolation_context.txt --imagefile Isolation.png
 Output:
-Below is an image
 ![Sterility Word Cloud](Sterility.png)
-And here is another 
 
 ![Isolation Word Cloud](Isolation.png)
 ```
