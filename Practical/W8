@@ -3,7 +3,15 @@
 ## Disease Risks
 
 ### 1
+``` R
+geno <- read.table("R/DataFiles/H938_Euro_chr6.geno",
+                   sep = " ", header = TRUE)
+
+max(geno$nA1A1 + geno$nA1A2 + geno$nA2A2)
+Output:
+
 124 people total
+```
 
 ### 2
 
