@@ -14,7 +14,11 @@ Output:
 ```
 
 ### 2
-
+```R
+max(rowSums(geno[, c("nA1A1", "nA1A2", "nA2A2")]))
+output:
+124
+```
 ### 3
 
 ### 4
